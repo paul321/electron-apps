@@ -17,7 +17,12 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Runs a single command using the runners shell
-      - name: Install wine
-        run: brew cask install wine-stable
+      - name: Installing xquartz
+        run: brew install --cask xquartz
 
+      - name: Brew tap
+        run: brew tap homebrew/cask-versions
+
+      - name: Installing wine
+        run: brew install --cask --no-quarantine wine-staging
 
