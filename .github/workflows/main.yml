@@ -18,5 +18,6 @@ jobs:
     steps:
       # Runs a single command using the runners shell
       - name: Install wine
-        run: brew install wine
+        run: brew cask install wine-stable
+
 
