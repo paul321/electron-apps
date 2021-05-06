@@ -26,3 +26,11 @@ jobs:
       - name: Installing wine
         run: brew install --cask --no-quarantine wine-staging
 
+      - name: Installing mono
+        run: brew install mono
+        
+      - name: Installing openssl
+        run: brew install openssl
+        
+      - name: Installing osslsigncode
+        run: brew install osslsigncode
